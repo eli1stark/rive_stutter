@@ -43,9 +43,7 @@ class _RiveTestPageState extends State<RiveTestPage> {
   void initState() {
     super.initState();
     _fileLoaders = _assets
-        .map(
-          (asset) => FileLoader.fromAsset(asset, riveFactory: Factory.flutter),
-        )
+        .map((asset) => FileLoader.fromAsset(asset, riveFactory: Factory.rive))
         .toList();
   }
 
